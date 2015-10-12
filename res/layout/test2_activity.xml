@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/btn_imageRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ImageRequest"
+        android:textAllCaps="false" />
+
+    <ImageView
+        android:id="@+id/img_imgeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_imageRequest"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/btn_imageLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_imgeView"
+        android:layout_centerHorizontal="true"
+        android:text="ImageLoader"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_networkImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_imageLoader"
+        android:layout_centerHorizontal="true"
+        android:text="ImageLoader"
+        android:textAllCaps="false" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/net_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_networkImageView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

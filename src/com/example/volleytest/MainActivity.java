@@ -10,10 +10,11 @@ import android.widget.Button;
 import com.example.volleytest.lesson1.Test1Acivity;
 import com.example.volleytest.lesson2.Test2Acivity;
 import com.example.volleytest.lesson3.Test3Acivity;
+import com.example.volleytest.lesson4.Test4Acivity;
 
 public class MainActivity extends Activity implements OnClickListener {
 
-	private Button btn1, btn2, btn3;
+	private Button btn1, btn2, btn3, btn4;
 	private Intent intent;
 
 	@Override
@@ -23,9 +24,11 @@ public class MainActivity extends Activity implements OnClickListener {
 		btn1 = (Button) findViewById(R.id.button1);
 		btn2 = (Button) findViewById(R.id.button2);
 		btn3 = (Button) findViewById(R.id.button3);
+		btn4 = (Button) findViewById(R.id.button4);
 		btn1.setOnClickListener(this);
 		btn2.setOnClickListener(this);
 		btn3.setOnClickListener(this);
+		btn4.setOnClickListener(this);
 	}
 
 	@Override
@@ -43,7 +46,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.button3:
 			intent = new Intent(MainActivity.this, Test3Acivity.class);
 			break;
-
+		case R.id.button4:
+			intent = new Intent(MainActivity.this, Test4Acivity.class);
+			break;
 		default:
 			break;
 		}
